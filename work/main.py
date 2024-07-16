@@ -41,7 +41,8 @@ def main(dista):
     
     print("mf.mo_energy =\n %s" % mf.mo_energy)
     print("mf.mo_occ    =\n %s" % mf.mo_occ)
-    print("mf.mo_coeff  =\n %s" % mf.mo_coeff)
+    from pyscf.tools.dump_mat import dump_mo
+    dump_mo(mol, mf.mo_coeff, label='SymAdaptedROHF', digits=4)
 
     ncas, n_elec, spin, ecore, h1e, g2e, orb_sym = itg.get_rhf_integrals(
         mf, ncore=0, ncas=None, g2e_symm=8
