@@ -290,3 +290,30 @@ Sweep =    4 | Direction =  forward | Bond dimension =  500 | Noise =  1.00e-05 
 Time elapsed =     49.728 | E =    -149.7444883569 | DE = -4.23e-03 | DW = 9.92e-06
 
 Sweep =    5 | Direction = backward | Bond dimension =  500 | Noise =  1.00e-05 | Dav threshold =  1.00e-10
+Time elapsed =     77.524 | E =    -149.7464605165 | DE = -1.97e-03 | DW = 6.37e-05
+
+Sweep =    6 | Direction =  forward | Bond dimension =  500 | Noise =  1.00e-05 | Dav threshold =  1.00e-10
+Time elapsed =    109.153 | E =    -149.7470331504 | DE = -5.73e-04 | DW = 8.70e-05
+
+Sweep =    7 | Direction = backward | Bond dimension =  500 | Noise =  1.00e-05 | Dav threshold =  1.00e-10
+Time elapsed =    138.414 | E =    -149.7478724552 | DE = -8.39e-04 | DW = 9.78e-05
+
+Sweep =    8 | Direction =  forward | Bond dimension = 1000 | Noise =  1.00e-06 | Dav threshold =  1.00e-10
+Time elapsed =    206.800 | E =    -149.7506885669 | DE = -2.82e-03 | DW = 2.82e-06
+
+Sweep =    9 | Direction = backward | Bond dimension = 1000 | Noise =  1.00e-06 | Dav threshold =  1.00e-10
+Time elapsed =    305.631 | E =    -149.7519110780 | DE = -1.22e-03 | DW = 1.37e-05
+
+Sweep =   10 | Direction =  forward | Bond dimension = 1000 | Noise =  1.00e-06 | Dav threshold =  1.00e-10
+Time elapsed =    400.672 | E =    -149.7520253289 | DE = -1.14e-04 | DW = 1.51e-05
+
+Sweep =   11 | Direction = backward | Bond dimension = 1000 | Noise =  1.00e-06 | Dav threshold =  1.00e-10
+Time elapsed =    496.635 | E =    -149.7522184988 | DE = -1.93e-04 | DW = 1.53e-05
+
+Sweep =   12 | Direction =  forward | Bond dimension = 1000 | Noise =  1.00e-06 | Dav threshold =  1.00e-07
+Time elapsed =    555.605 | E =    -149.7522191831 | DE = -6.84e-07 | DW = 1.55e-05
+
+Sweep =   13 | Direction = backward | Bond dimension = 1000 | Noise =  1.00e-06 | Dav threshold =  1.00e-07
+Time elapsed =    610.611 | E =    -149.7522452812 | DE = -2.61e-05 | DW = 1.55e-05
+
+Sweep =   14 | Direction =  forward | Bond dimension = 1000 | Noise =  1.00e-06 | Dav threshold =  1.00e-07
