@@ -9,9 +9,9 @@ from pyblock2.driver.core import DMRGDriver, SymmetryTypes
 
 tmpdir = pyscf.lib.param.TMPDIR
 
-bond_dims = [250] * 4 + [500] * 4 + [1000] * 4
-noises = [1e-4] * 4 + [1e-5] * 4 + [1e-6] * 4
-thrds = [1e-10] * 12
+bond_dims = [250] * 4 + [500] * 4 + [1000] * 4 + [2000] * 4
+noises = [1e-4] * 4 + [1e-5] * 4 + [1e-6] * 4 + [0]
+thrds = [1e-6] * 4 + [1e-8] * 4 + [1e-10] * 1
 n_threads = int(os.environ.get("OMP_NUM_THREADS", "1"))
 
 def main(dista):
@@ -54,7 +54,7 @@ def main(dista):
     driver.initialize_system(n_sites=ncas, n_elec=n_elec, spin=spin, orb_sym=orb_sym)
 
     mpo = driver.get_qc_mpo(h1e=h1e, g2e=g2e, ecore=ecore, iprint=1)
-    ket = driver.get_random_mps(tag="GS", bond_dim=250, nroots=1)
+    ket = driver.get_random_mps(tag="GS", bond_dim=bond_dims[0], nroots=1)
     energy = driver.dmrg(
         mpo, ket, n_sweeps=20, bond_dims=bond_dims, 
         noises=noises, thrds=thrds, iprint=1
