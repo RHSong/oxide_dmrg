@@ -39,9 +39,9 @@ def main(dista):
     mf.conv_tol_grad = 1e-8
     mf.kernel()
     
-	print("mf.mo_energy =\n %s" % mf.mo_energy)
-	print("mf.mo_occ    =\n %s" % mf.mo_occ)
-	print("mf.mo_coeff  =\n %s" % mf.mo_coeff)
+    print("mf.mo_energy =\n %s" % mf.mo_energy)
+    print("mf.mo_occ    =\n %s" % mf.mo_occ)
+    print("mf.mo_coeff  =\n %s" % mf.mo_coeff)
 
     ncas, n_elec, spin, ecore, h1e, g2e, orb_sym = itg.get_rhf_integrals(
         mf, ncore=0, ncas=None, g2e_symm=8
