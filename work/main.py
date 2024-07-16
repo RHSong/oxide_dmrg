@@ -9,9 +9,9 @@ from pyblock2.driver.core import DMRGDriver, SymmetryTypes
 
 tmpdir = pyscf.lib.param.TMPDIR
 
-bond_dims = [250] * 4 + [500] * 4
-noises = [1e-4] * 4 + [1e-5] * 4 + [0]
-thrds = [1e-10] * 8
+bond_dims = [250] * 4 + [500] * 4 + [1000] * 4
+noises = [1e-4] * 4 + [1e-5] * 4 + [1e-6] * 4
+thrds = [1e-10] * 12
 
 def main(dista):
 	assert dista > 0.0
