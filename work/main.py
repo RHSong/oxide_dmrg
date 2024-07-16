@@ -1,4 +1,4 @@
-import numpy, scipy
+import os, numpy, scipy
 from scipy.linalg import block_diag
 
 import pyscf
@@ -12,8 +12,10 @@ tmpdir = pyscf.lib.param.TMPDIR
 bond_dims = [250] * 4 + [500] * 4 + [1000] * 4
 noises = [1e-4] * 4 + [1e-5] * 4 + [1e-6] * 4
 thrds = [1e-10] * 12
+n_threads = os.environ.get("OMP_NUM_THREADS", "1")
 
 def main(dista):
+	print("\n\nRunning calculation for dista = %12.8f" % dista)
 	assert dista > 0.0
 
 	mol = gto.Mole()
@@ -31,7 +33,7 @@ def main(dista):
 	print("ncas = %s, n_elec = %s, spin = %s, ecore = %s" % (ncas, n_elec, spin, ecore))
 	print("orb_sym = %s" % orb_sym)
 
-	driver = DMRGDriver(scratch=tmpdir, symm_type=SymmetryTypes.SU2, n_threads=16)
+	driver = DMRGDriver(scratch=tmpdir, symm_type=SymmetryTypes.SU2, n_threads=int(n_threads))
 	driver.initialize_system(n_sites=ncas, n_elec=n_elec, spin=spin, orb_sym=orb_sym)
 
 	mpo = driver.get_qc_mpo(h1e=h1e, g2e=g2e, ecore=ecore, iprint=1)
