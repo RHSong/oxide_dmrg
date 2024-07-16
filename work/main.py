@@ -12,7 +12,7 @@ tmpdir = pyscf.lib.param.TMPDIR
 bond_dims = [250] * 4 + [500] * 4 + [1000] * 4
 noises = [1e-4] * 4 + [1e-5] * 4 + [1e-6] * 4
 thrds = [1e-10] * 12
-n_threads = os.environ.get("OMP_NUM_THREADS", "1")
+n_threads = int(os.environ.get("OMP_NUM_THREADS", "1"))
 
 def main(dista):
     print("\n\n=====================================================")
@@ -32,14 +32,24 @@ def main(dista):
     mol.build()
 
     # RHF case (for spin-adapted / non-spin-adapted DMRG)
-    mf = scf.RHF(mol).run()
+    mf = scf.RHF(mol)
+    mf.verbose = 4
+    mf.max_cycle = 100
+    mf.conv_tol = 1e-10
+    mf.conv_tol_grad = 1e-8
+    mf.kernel()
+    
+	print("mf.mo_energy =\n %s" % mf.mo_energy)
+	print("mf.mo_occ    =\n %s" % mf.mo_occ)
+	print("mf.mo_coeff  =\n %s" % mf.mo_coeff)
+
     ncas, n_elec, spin, ecore, h1e, g2e, orb_sym = itg.get_rhf_integrals(
         mf, ncore=0, ncas=None, g2e_symm=8
         )
     print("ncas = %s, n_elec = %s, spin = %s, ecore = %s" % (ncas, n_elec, spin, ecore))
     print("orb_sym = %s" % orb_sym)
 
-    driver = DMRGDriver(scratch=tmpdir, symm_type=SymmetryTypes.SU2, n_threads=int(n_threads))
+    driver = DMRGDriver(scratch=tmpdir, symm_type=SymmetryTypes.SU2, n_threads=n_threads)
     driver.initialize_system(n_sites=ncas, n_elec=n_elec, spin=spin, orb_sym=orb_sym)
 
     mpo = driver.get_qc_mpo(h1e=h1e, g2e=g2e, ecore=ecore, iprint=1)
