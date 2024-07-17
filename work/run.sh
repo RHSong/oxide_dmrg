@@ -1,10 +1,10 @@
 #!/bin/bash
-#SBATCH --partition=serial
+#SBATCH --partition=parallel
 #SBATCH --time=120:00:00
 #SBATCH --nodes=1
 #SBATCH --cpus-per-task=28
 #SBATCH --job-name=o2
-#SBATCH --mem=200000
+#SBATCH --mem=500000
 
 source /home/yangjunjie/.bashrc
 module purge

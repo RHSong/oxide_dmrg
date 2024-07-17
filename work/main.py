@@ -56,7 +56,7 @@ def main(dista):
     driver.initialize_system(n_sites=ncas, n_elec=n_elec, spin=spin, orb_sym=orb_sym)
 
     mpo = driver.get_qc_mpo(h1e=h1e, g2e=g2e, ecore=ecore, iprint=1)
-    ket = driver.get_random_mps(tag="GS", bond_dim=250, nroots=1)
+    ket = driver.get_random_mps(tag="GS", bond_dim=bond_dims[0], nroots=1)
     energy = driver.dmrg(
         mpo, ket, n_sweeps=20, bond_dims=bond_dims,
         noises=noises, thrds=thrds, iprint=1,
