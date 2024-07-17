@@ -9,9 +9,9 @@ from pyblock2.driver.core import DMRGDriver, SymmetryTypes
 
 tmpdir = pyscf.lib.param.TMPDIR
 
-bond_dims = [250] * 4 + [500] * 4 + [1000] * 4 + [2000] * 4
+bond_dims = [250] * 4 + [500] * 4 + [1000] * 12
 noises = [1e-4] * 4 + [1e-5] * 4 + [1e-6] * 4 + [0]
-thrds = [1e-6] * 4 + [1e-8] * 4 + [1e-10] * 1
+thrds = [1e-6] * 4 + [1e-8] * 4 + [1e-10] * 12
 n_threads = int(os.environ.get("OMP_NUM_THREADS", "1"))
 
 def main(dista):
