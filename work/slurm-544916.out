@@ -770,3 +770,10 @@ Sweep =   17 | Direction = backward | Bond dimension = 1000 | Noise =  0.00e+00 
 Time elapsed =    987.029 | E =    -149.8225299527 | DE = -8.32e-05 | DW = 1.06e-04
 
 Sweep =   18 | Direction =  forward | Bond dimension = 1000 | Noise =  0.00e+00 | Dav threshold =  1.00e-10
+Time elapsed =   1077.346 | E =    -149.8225359807 | DE = -6.03e-06 | DW = 1.07e-04
+
+Sweep =   19 | Direction = backward | Bond dimension = 1000 | Noise =  0.00e+00 | Dav threshold =  1.00e-10
+Time elapsed =   1150.276 | E =    -149.8225741365 | DE = -3.82e-05 | DW = 1.10e-04
+
+ATTENTION: DMRG is not converged to desired tolerance of 1.00e-08
+Final result: dista =   3.00000000, energy = -149.82257414
