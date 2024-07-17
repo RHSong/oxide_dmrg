@@ -306,3 +306,31 @@ Sweep =   16 | Direction =  forward | Bond dimension = 1000 | Noise =  0.00e+00 
 Time elapsed =   9146.420 | E =    -149.9902737086 | DE = -3.07e-05 | DW = 4.42e-06
 
 Sweep =   17 | Direction = backward | Bond dimension = 1000 | Noise =  0.00e+00 | Dav threshold =  1.00e-10
+Time elapsed =  10177.659 | E =    -149.9902950123 | DE = -2.13e-05 | DW = 4.41e-06
+
+Sweep =   18 | Direction =  forward | Bond dimension = 1000 | Noise =  0.00e+00 | Dav threshold =  1.00e-10
+Time elapsed =  11224.884 | E =    -149.9902970983 | DE = -2.09e-06 | DW = 4.41e-06
+
+Sweep =   19 | Direction = backward | Bond dimension = 1000 | Noise =  0.00e+00 | Dav threshold =  1.00e-10
+Time elapsed =  12250.220 | E =    -149.9903026826 | DE = -5.58e-06 | DW = 4.47e-06
+
+
+Sweep =   20 | Direction =  forward | Bond dimension = 1000 | Noise =  0.00e+00 | Dav threshold =  1.00e-10
+Time elapsed =    299.979 | E =    -149.9902654688 | DE = 3.72e-05 | DW = 7.51e-16
+
+Sweep =   21 | Direction = backward | Bond dimension = 1000 | Noise =  0.00e+00 | Dav threshold =  1.00e-10
+Time elapsed =    647.766 | E =    -149.9902685828 | DE = -3.11e-06 | DW = 2.28e-16
+
+Sweep =   22 | Direction =  forward | Bond dimension = 1000 | Noise =  0.00e+00 | Dav threshold =  1.00e-10
+Time elapsed =    920.120 | E =    -149.9902703908 | DE = -1.81e-06 | DW = 7.65e-16
+
+Sweep =   23 | Direction = backward | Bond dimension = 1000 | Noise =  0.00e+00 | Dav threshold =  1.00e-10
+Time elapsed =   1254.934 | E =    -149.9902716846 | DE = -1.29e-06 | DW = 2.13e-16
+
+Sweep =   24 | Direction =  forward | Bond dimension = 1000 | Noise =  0.00e+00 | Dav threshold =  1.00e-10
+Time elapsed =   1520.543 | E =    -149.9902727320 | DE = -1.05e-06 | DW = 1.03e-15
+
+Sweep =   25 | Direction = backward | Bond dimension = 1000 | Noise =  0.00e+00 | Dav threshold =  1.00e-10
+Time elapsed =   1851.956 | E =    -149.9902736884 | DE = -9.56e-07 | DW = 1.76e-16
+
+Sweep =   26 | Direction =  forward | Bond dimension = 1000 | Noise =  0.00e+00 | Dav threshold =  1.00e-10
