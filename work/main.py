@@ -31,7 +31,7 @@ def main(dista):
     mol.atom = [['O',(0.0, 0.0, 0.0)], ['O',(0.0, 0.0, dista)],]
     mol.spin = 2
     mol.basis = 'ccpvdz'
-    mol.symmetry = 'd2h'
+    mol.symmetry = None # 'd2h'
     mol.build()
 
     # RHF case (for spin-adapted / non-spin-adapted DMRG)
@@ -39,8 +39,8 @@ def main(dista):
     mf.verbose = 4
     mf.kernel()
 
-    # from pyscf import lo
-    # mf.mo_coeff = lo.orth_ao(mol, 'meta_lowdin')
+    from pyscf import lo
+    mf.mo_coeff = lo.orth_ao(mol, 'meta_lowdin')
     
     print("mf.mo_energy =\n %s" % mf.mo_energy)
     from pyscf.tools.dump_mat import dump_mo
