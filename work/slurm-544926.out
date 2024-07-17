@@ -272,3 +272,68 @@ Sweep =    0 | Direction =  forward | Bond dimension =  250 | Noise =  1.00e-04 
 Time elapsed =     43.092 | E =    -145.9918519150 | DW = 3.69e-09
 
 Sweep =    1 | Direction = backward | Bond dimension =  250 | Noise =  1.00e-04 | Dav threshold =  1.00e-10
+Time elapsed =    202.825 | E =    -149.5580426782 | DE = -3.57e+00 | DW = 5.04e-06
+
+Sweep =    2 | Direction =  forward | Bond dimension =  250 | Noise =  1.00e-04 | Dav threshold =  1.00e-10
+Time elapsed =    356.472 | E =    -149.8775167033 | DE = -3.19e-01 | DW = 3.03e-05
+
+Sweep =    3 | Direction = backward | Bond dimension =  250 | Noise =  1.00e-04 | Dav threshold =  1.00e-10
+Time elapsed =    484.564 | E =    -149.9478071442 | DE = -7.03e-02 | DW = 9.73e-05
+
+Sweep =    4 | Direction =  forward | Bond dimension =  500 | Noise =  1.00e-05 | Dav threshold =  1.00e-10
+Time elapsed =    673.252 | E =    -149.9755288715 | DE = -2.77e-02 | DW = 4.63e-06
+
+Sweep =    5 | Direction = backward | Bond dimension =  500 | Noise =  1.00e-05 | Dav threshold =  1.00e-10
+Time elapsed =    963.183 | E =    -149.9849037440 | DE = -9.37e-03 | DW = 1.78e-05
+
+Sweep =    6 | Direction =  forward | Bond dimension =  500 | Noise =  1.00e-05 | Dav threshold =  1.00e-10
+Time elapsed =   1244.521 | E =    -149.9864524198 | DE = -1.55e-03 | DW = 2.12e-05
+
+Sweep =    7 | Direction = backward | Bond dimension =  500 | Noise =  1.00e-05 | Dav threshold =  1.00e-10
+Time elapsed =   1488.845 | E =    -149.9867365883 | DE = -2.84e-04 | DW = 2.20e-05
+
+Sweep =    8 | Direction =  forward | Bond dimension = 1000 | Noise =  1.00e-05 | Dav threshold =  1.00e-10
+Time elapsed =   2178.684 | E =    -149.9886893879 | DE = -1.95e-03 | DW = 1.31e-06
+
+Sweep =    9 | Direction = backward | Bond dimension = 1000 | Noise =  1.00e-05 | Dav threshold =  1.00e-10
+Time elapsed =   3457.400 | E =    -149.9899501677 | DE = -1.26e-03 | DW = 4.43e-06
+
+Sweep =   10 | Direction =  forward | Bond dimension = 1000 | Noise =  1.00e-05 | Dav threshold =  1.00e-10
+Time elapsed =   4689.869 | E =    -149.9901449947 | DE = -1.95e-04 | DW = 5.06e-06
+
+Sweep =   11 | Direction = backward | Bond dimension = 1000 | Noise =  1.00e-05 | Dav threshold =  1.00e-10
+Time elapsed =   5825.836 | E =    -149.9902202627 | DE = -7.53e-05 | DW = 4.92e-06
+
+Sweep =   12 | Direction =  forward | Bond dimension = 2000 | Noise =  1.00e-05 | Dav threshold =  1.00e-10
+exceeding allowed memory (size=289910292, trying to allocate 663597)  (double)
+/home/yangjunjie/anaconda3/envs/py310-block2/lib/python3.10/site-packages/block2.cpython-310-x86_64-linux-gnu.so(+0x8652abf) [0x7fe9bc269abf]
+/home/yangjunjie/anaconda3/envs/py310-block2/lib/python3.10/site-packages/block2.cpython-310-x86_64-linux-gnu.so(+0x90c526e) [0x7fe9bccdc26e]
+/home/yangjunjie/anaconda3/envs/py310-block2/lib/python3.10/site-packages/block2.cpython-310-x86_64-linux-gnu.so(+0x8fed1c7) [0x7fe9bcc041c7]
+/home/yangjunjie/anaconda3/envs/py310-block2/lib/python3.10/site-packages/block2.cpython-310-x86_64-linux-gnu.so(+0x90a4597) [0x7fe9bccbb597]
+/home/yangjunjie/anaconda3/envs/py310-block2/lib/python3.10/site-packages/block2.cpython-310-x86_64-linux-gnu.so(+0x7becbc2) [0x7fe9bb803bc2]
+/home/yangjunjie/anaconda3/envs/py310-block2/lib/python3.10/site-packages/block2.cpython-310-x86_64-linux-gnu.so(+0x7bf15cd) [0x7fe9bb8085cd]
+/home/yangjunjie/anaconda3/envs/py310-block2/lib/python3.10/site-packages/block2.cpython-310-x86_64-linux-gnu.so(+0x7e4c77b) [0x7fe9bba6377b]
+/home/yangjunjie/anaconda3/envs/py310-block2/lib/python3.10/site-packages/block2.cpython-310-x86_64-linux-gnu.so(+0x7e327fe) [0x7fe9bba497fe]
+/home/yangjunjie/anaconda3/envs/py310-block2/lib/python3.10/site-packages/block2.cpython-310-x86_64-linux-gnu.so(+0x7e3682e) [0x7fe9bba4d82e]
+/home/yangjunjie/anaconda3/envs/py310-block2/lib/python3.10/site-packages/block2.cpython-310-x86_64-linux-gnu.so(+0x1eada3c) [0x7fe9b5ac4a3c]
+/home/yangjunjie/anaconda3/envs/py310-block2/lib/python3.10/site-packages/block2.cpython-310-x86_64-linux-gnu.so(+0x453d96) [0x7fe9b406ad96]
+python() [0x4fdc87]
+python(_PyObject_MakeTpCall+0x25b) [0x4f741b]
+python() [0x509cbf]
+python(_PyEval_EvalFrameDefault+0x4b26) [0x4f2c16]
+python() [0x5099ce]
+python(_PyEval_EvalFrameDefault+0x13b3) [0x4ef4a3]
+python(_PyFunction_Vectorcall+0x6f) [0x4fe0cf]
+python(_PyEval_EvalFrameDefault+0x31f) [0x4ee40f]
+python() [0x5950f2]
+python(PyEval_EvalCode+0x87) [0x595037]
+python() [0x5c5e67]
+python() [0x5c0fb0]
+python() [0x45970e]
+python(_PyRun_SimpleFileObject+0x19f) [0x5bb53f]
+python(_PyRun_AnyFileObject+0x43) [0x5bb2a3]
+python(Py_RunMain+0x38d) [0x5b805d]
+python(Py_BytesMain+0x39) [0x588679]
+/usr/lib64/libc.so.6(__libc_start_main+0xf5) [0x7fea60cafb15]
+python() [0x58852e]
+/var/spool/slurmd/job544926/slurm_script: line 29: 25981 Aborted                 python main.py
