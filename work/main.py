@@ -37,6 +37,7 @@ def main(dista):
     # RHF case (for spin-adapted / non-spin-adapted DMRG)
     mf = scf.RHF(mol)
     mf.verbose = 4
+    mf.max_cycle = -1
     mf.kernel()
 
     from pyscf import lo
