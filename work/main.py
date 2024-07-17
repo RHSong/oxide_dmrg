@@ -9,10 +9,13 @@ from pyblock2.driver.core import DMRGDriver, SymmetryTypes
 
 tmpdir = pyscf.lib.param.TMPDIR
 
-bond_dims = [250] * 4 + [500] * 4 + [1000] * 12
-noises = [1e-4] * 4 + [1e-5] * 4 + [1e-6] * 4 + [0]
-thrds = [1e-6] * 4 + [1e-8] * 4 + [1e-10] * 12
-n_threads = int(os.environ.get("OMP_NUM_THREADS", "1"))
+# bond_dims = [250] * 4 + [500] * 4 + [1000] * 4
+# noises = [1e-4] * 4 + [1e-5] * 4 + [1e-6] * 4
+# thrds = [1e-10] * 12
+bond_dims = [250] * 4 + [500] * 4 + [750] * 4 + [1000] * 4
+noises = [1e-4] * 4 + [1e-5] * 12 + [0]
+thrds = [1e-8] * 20
+n_threads = int(os.environ.get("OMP_NUM_THREADS", "20"))
 
 def main(dista):
     print("\n\n=====================================================")
@@ -27,20 +30,19 @@ def main(dista):
     mol = gto.Mole()
     mol.atom = [['O',(0.0, 0.0, 0.0)], ['O',(0.0, 0.0, dista)],]
     mol.spin = 2
-    mol.basis = 'cc-pvdz'
-    mol.symmetry = 'C2v'
+    mol.basis = 'ccpvdz'
+    mol.symmetry = 'd2h'
     mol.build()
 
     # RHF case (for spin-adapted / non-spin-adapted DMRG)
     mf = scf.RHF(mol)
     mf.verbose = 4
-    mf.max_cycle = 100
-    mf.conv_tol = 1e-10
-    mf.conv_tol_grad = 1e-8
     mf.kernel()
+
+    # from pyscf import lo
+    # mf.mo_coeff = lo.orth_ao(mol, 'meta_lowdin')
     
     print("mf.mo_energy =\n %s" % mf.mo_energy)
-    print("mf.mo_occ    =\n %s" % mf.mo_occ)
     from pyscf.tools.dump_mat import dump_mo
     dump_mo(mol, mf.mo_coeff, digits=6)
 
@@ -56,8 +58,9 @@ def main(dista):
     mpo = driver.get_qc_mpo(h1e=h1e, g2e=g2e, ecore=ecore, iprint=1)
     ket = driver.get_random_mps(tag="GS", bond_dim=bond_dims[0], nroots=1)
     energy = driver.dmrg(
-        mpo, ket, n_sweeps=20, bond_dims=bond_dims, 
-        noises=noises, thrds=thrds, iprint=1
+        mpo, ket, n_sweeps=20, bond_dims=bond_dims,
+        noises=noises, thrds=thrds, iprint=1,
+        twosite_to_onesite=20
     )
 
     print('Final result: dista = %12.8f, energy = %12.8f' % (dista, energy))
