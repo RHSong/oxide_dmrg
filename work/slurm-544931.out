@@ -628,3 +628,15 @@ Sweep =    8 | Direction =  forward | Bond dimension =  750 | Noise =  1.00e-05 
 Time elapsed =   3988.023 | E =    -149.8240057153 | DE = -3.61e-05 | DW = 4.65e-08
 
 Sweep =    9 | Direction = backward | Bond dimension =  750 | Noise =  1.00e-05 | Dav threshold =  1.00e-10
+Time elapsed =   6304.221 | E =    -149.8241297281 | DE = -1.24e-04 | DW = 9.10e-08
+
+Sweep =   10 | Direction =  forward | Bond dimension =  750 | Noise =  1.00e-05 | Dav threshold =  1.00e-10
+Time elapsed =   9090.018 | E =    -149.8243426757 | DE = -2.13e-04 | DW = 1.56e-07
+
+Sweep =   11 | Direction = backward | Bond dimension =  750 | Noise =  1.00e-05 | Dav threshold =  1.00e-10
+Time elapsed =  10722.169 | E =    -149.8244303966 | DE = -8.77e-05 | DW = 1.24e-07
+
+Sweep =   12 | Direction =  forward | Bond dimension = 1000 | Noise =  1.00e-05 | Dav threshold =  1.00e-10
+Time elapsed =  13572.887 | E =    -149.8244915358 | DE = -6.11e-05 | DW = 5.08e-08
+
+Sweep =   13 | Direction = backward | Bond dimension = 1000 | Noise =  1.00e-05 | Dav threshold =  1.00e-10
