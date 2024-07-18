@@ -640,3 +640,43 @@ Sweep =   12 | Direction =  forward | Bond dimension = 1000 | Noise =  1.00e-05 
 Time elapsed =  13572.887 | E =    -149.8244915358 | DE = -6.11e-05 | DW = 5.08e-08
 
 Sweep =   13 | Direction = backward | Bond dimension = 1000 | Noise =  1.00e-05 | Dav threshold =  1.00e-10
+Time elapsed =  15668.044 | E =    -149.8245276709 | DE = -3.61e-05 | DW = 4.61e-08
+
+Sweep =   14 | Direction =  forward | Bond dimension = 1000 | Noise =  1.00e-05 | Dav threshold =  1.00e-10
+Time elapsed =  18979.096 | E =    -149.8245433021 | DE = -1.56e-05 | DW = 6.58e-08
+
+Sweep =   15 | Direction = backward | Bond dimension = 1000 | Noise =  1.00e-05 | Dav threshold =  1.00e-10
+Time elapsed =  20363.960 | E =    -149.8245500979 | DE = -6.80e-06 | DW = 4.37e-08
+
+Sweep =   16 | Direction =  forward | Bond dimension = 1000 | Noise =  0.00e+00 | Dav threshold =  1.00e-10
+Time elapsed =  22612.158 | E =    -149.8245532615 | DE = -3.16e-06 | DW = 1.94e-08
+
+Sweep =   17 | Direction = backward | Bond dimension = 1000 | Noise =  0.00e+00 | Dav threshold =  1.00e-10
+Time elapsed =  23540.473 | E =    -149.8245546076 | DE = -1.35e-06 | DW = 2.05e-08
+
+Sweep =   18 | Direction =  forward | Bond dimension = 1000 | Noise =  0.00e+00 | Dav threshold =  1.00e-10
+Time elapsed =  25319.085 | E =    -149.8245550549 | DE = -4.47e-07 | DW = 2.05e-08
+
+Sweep =   19 | Direction = backward | Bond dimension = 1000 | Noise =  0.00e+00 | Dav threshold =  1.00e-10
+Time elapsed =  26034.943 | E =    -149.8245554492 | DE = -3.94e-07 | DW = 2.06e-08
+
+
+Sweep =   20 | Direction =  forward | Bond dimension = 1000 | Noise =  0.00e+00 | Dav threshold =  1.00e-10
+Time elapsed =    340.950 | E =    -149.8245554123 | DE = 3.69e-08 | DW = 6.73e-16
+
+Sweep =   21 | Direction = backward | Bond dimension = 1000 | Noise =  0.00e+00 | Dav threshold =  1.00e-10
+Time elapsed =    638.505 | E =    -149.8245554362 | DE = -2.38e-08 | DW = 3.58e-16
+
+Sweep =   22 | Direction =  forward | Bond dimension = 1000 | Noise =  0.00e+00 | Dav threshold =  1.00e-10
+Time elapsed =    832.015 | E =    -149.8245554511 | DE = -1.49e-08 | DW = 7.25e-16
+
+Sweep =   23 | Direction = backward | Bond dimension = 1000 | Noise =  0.00e+00 | Dav threshold =  1.00e-10
+Time elapsed =   1084.850 | E =    -149.8245554626 | DE = -1.15e-08 | DW = 2.58e-16
+
+Sweep =   24 | Direction =  forward | Bond dimension = 1000 | Noise =  0.00e+00 | Dav threshold =  1.00e-10
+Time elapsed =   1274.570 | E =    -149.8245554730 | DE = -1.04e-08 | DW = 7.67e-16
+
+Sweep =   25 | Direction = backward | Bond dimension = 1000 | Noise =  0.00e+00 | Dav threshold =  1.00e-10
+Time elapsed =   1525.209 | E =    -149.8245554817 | DE = -8.74e-09 | DW = 1.69e-16
+
+Final result: dista =   3.00000000, energy = -149.82455548
